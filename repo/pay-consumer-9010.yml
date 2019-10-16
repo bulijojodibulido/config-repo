@@ -1,0 +1,20 @@
+server:
+  port: 9010
+  
+  
+# 服务熔断、降级     
+feign: 
+   hystrix: 
+      enable: true
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: hystrix.stream
+
+spring:
+    application:
+        name: snailshop-consumer-pay  
+
+
