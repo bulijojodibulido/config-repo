@@ -1,0 +1,4 @@
+spring:  application:    name: snailshop-ActiveMQ
+  activemq:    broker-url: tcp://127.0.0.1:61616    in-memory: true    pool:      enabled: false    packages:      trust-all: true  
+server:  port: 12307
+  
