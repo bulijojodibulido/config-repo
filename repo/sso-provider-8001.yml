@@ -37,8 +37,3 @@ xl:
   client_secret: 46753dfced8ad8eea79b1c886cca87f2
   redirect_uri: http://www.snailshell.com.cn:9527/snailshop/v/sso/consumer/wb/vlogin
   
-info: #信息展示
-  app.name: snailshop-provider-sso-8001
-  company.name: www.snailshell.com.cn
-  build.artifactId: $project.artifact$
-  build.version: $project.version$
