@@ -1,0 +1,26 @@
+server:
+  port: 9527
+  
+spring:  application:    name: springcloud-zuul-getway
+   
+
+
+zuul:
+  ignoredServices: '*'  #忽略所有微服务名称访问
+  prefix: /snailshop    #配置统一前缀
+  routes:
+    app-snailshop-consumer-sso:
+      path: /v/sso/**  #配置当前微服务的访问路径
+      serviceId: snailshop-consumer-sso  #微服务名称
+    app-snailshop-consumer-product:
+      path: /v/product/**  #配置当前微服务的访问路径
+      serviceId: snailshop-consumer-product  #微服务名称
+    app-snailshop-provider-web-images:
+      path: /v/web/**  #配置当前微服务的访问路径
+      serviceId: snailshop-provider-web-images  #微服务名称
+    app-snailshop-consumer-cart:
+      path: /v/cart/**  #配置当前微服务的访问路径
+      serviceId: snailshop-consumer-cart  #微服务名称
+    app-snailshop-consumer-pay:
+      path: /v/pay/**  #配置当前微服务的访问路径
+      serviceId: snailshop-consumer-pay  #微服务名称
