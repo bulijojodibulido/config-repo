@@ -1,0 +1,15 @@
+server:
+  port: 9210
+  
+  
+# 服务熔断、降级     
+feign: 
+   hystrix: 
+      enable: true
+
+
+spring:
+    application:
+        name: snailshop-consumer-cart  
+
+ 
